@@ -2,9 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { ClientesModule } from './clientes/clientes.module';
-import { PedidosModule } from './pedido/pedido.module';
 import { Cliente } from './clientes/entities/cliente.entity';
-import { Pedido } from './pedido/entities/pedido.entity';
+import { Pedido } from './pedidos/entities/pedido.entity';
 import { Factura } from './factura/entities/factura.entity';
 import { Producto } from './productos/entities/producto.entity';
 import { Insumo } from './insumos/entities/insumo.entity';
@@ -19,6 +18,7 @@ import { DetallesPedidoModule } from './detalles-pedido/detalles-pedido.module';
 import { ProductosInsumosModule } from './productos-insumos/productos-insumos.module';
 import { OrdenesProduccionModule } from './ordenes-produccion/ordenes-produccion.module';
 import { DetallesOrdenProduccionModule } from './detalles-orden-produccion/detalles-orden-produccion.module';
+import { PedidosModule } from './pedidos/pedidos.module';
 
 @Module({
   imports: [
