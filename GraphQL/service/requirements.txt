@@ -1,0 +1,9 @@
+fastapi>=0.95.0
+uvicorn[standard]>=0.22.0
+strawberry-graphql>=0.134.0
+httpx>=0.24.0
+pydantic>=1.10.0
+python-dotenv>=1.0.0
+pytest>=7.0.0
+respx>=0.20.0
+aiocache>=0.11.1
